@@ -7,7 +7,7 @@ def key_for_min_value(hash)
   end
   accum = 1000
   hash.each do |k,v|
-    if k < accum
+    if v < accum
       accum = k
     end
   end
