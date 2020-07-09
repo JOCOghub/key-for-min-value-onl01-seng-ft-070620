@@ -5,7 +5,7 @@ def key_for_min_value(hash)
   if hash.empty?
     return nil
   end
-  ans = [hash[1],nil]
+  ans = [hash[0][1],nil]
   hash.each do |k,v|
     if v < ans[0]
       ans[0] = v
