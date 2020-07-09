@@ -5,11 +5,12 @@ def key_for_min_value(hash)
   if hash.empty?
     return nil
   end
-  accum = 1000
+  ans = [1000,nil]
   hash.each do |k,v|
-    if hash[k] < accum
-      accum = k
+    if v < ans[0]
+      ans[0] = v
+      ans[1] = k
     end
   end
-  return accum
+  return ans[1]
 end  
