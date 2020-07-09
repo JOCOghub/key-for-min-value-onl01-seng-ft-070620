@@ -5,7 +5,7 @@ def key_for_min_value(hash)
   if hash.empty?
     return nil
   end
-  return hash[0][1]
+  return hash[0][1] + "hello"
   # ans = [1000,nil]
   # hash.each do |k,v|
   #   if v < ans[0]
