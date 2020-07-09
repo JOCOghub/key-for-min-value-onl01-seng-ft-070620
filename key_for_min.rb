@@ -4,7 +4,7 @@
 def key_for_min_value(hash)
   if hash.empty?
     return nil
-  end
+  end     #:adam             100
   ans = [hash.first[0],hash.first[1]]
   hash.each do |k,v|
     if v < ans[1]
