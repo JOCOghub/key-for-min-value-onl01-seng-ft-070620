@@ -3,5 +3,5 @@
 
 def key_for_min_value(hash)
   return nil if hash.empty?
-  
+  return [hash[0], hash[0][1]]
 end  
