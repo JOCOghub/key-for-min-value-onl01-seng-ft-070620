@@ -6,12 +6,12 @@ def key_for_min_value(hash)
     return nil
   end
   return hash.first[1]
-  # ans = [1000,nil]
-  # hash.each do |k,v|
-  #   if v < ans[0]
-  #     ans[0] = v
-  #     ans[1] = k
-  #   end
-  # end
-  # return ans[1]
+  ans = [hash.first[1],nil]
+  hash.each do |k,v|
+    if v < ans[0]
+      ans[0] = v
+      ans[1] = k
+    end
+  end
+  return ans[1]
 end  
