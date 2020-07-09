@@ -5,7 +5,7 @@ def key_for_min_value(hash)
   if hash.empty?
     return nil
   end
-  
+  {"one" => 1, "two" => 2}.inject({}){|memo, (key, value)| memo}
   # ans = [hash.first[0],hash.first[1]]
   # hash.each do |k,v|
   #   if v < ans[1]
