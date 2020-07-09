@@ -4,7 +4,7 @@
 def key_for_min_value(hash)
   if hash.empty?
     return nil
-  end     #:logan             1
+  end
   ans = [hash.first[0],hash.first[1]]
   hash.each do |k,v|
     if v < ans[1]
